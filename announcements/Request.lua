@@ -1,5 +1,7 @@
 -- \ This is a LocalScript inside the Frame of a ScreenGui used to select/create the content, header & duration of the announcement
 
+-- \ Implements a char limit vvv
+
 script.Parent.Header.Changed:Connect(function()
 	script.Parent.Header.Text = script.Parent.Header.Text:sub(1,46)
 	print(script.Parent.Header.Text)
